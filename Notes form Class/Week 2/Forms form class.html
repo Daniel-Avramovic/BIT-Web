@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Primeri za forme</title>
+    </head>
+    <body>
+        <form action="" >
+            <p>
+                Username:
+                <input type="text" name="username" size="20" maxlength="30">
+            </p>
+            <p>
+                Password:
+                <input type="password" name="password" size="20" maxlength="30">
+            </p>
+        </form>
+        <br><br>
+        <h2>Radio buttonL</h2>
+        <form>
+            <input type="radio" name="car" value="Audi" checked>Audi
+            <input type="radio" name="car" value="Bmw">Bmw
+            <input type="radio" name="car" value="Opel">Opel
+        </form><br><br>
+        <h2>Check box</h2>
+        <form>
+            <p>Check your favorite color: </p>
+            <input type="checkbox" name="color" value="red">Red
+            <input type="checkbox" name="color" value="blue">Blue
+            <input type="checkbox" name="color" value="Black">Black
+        </form><br><br>
+        <form>
+            <h2>Dropdown list:</h2>
+            <p>Check your favorite device:</p>
+            <select name="device">
+                <option value="Huawei">Huawei</option>
+                <option value="Samsung">Samsung</option>
+                <option value="Nokia">Nokia</option>
+                <option value="Iphone">Iphone</option>
+            </select>
+        </form><br><br>
+        <form>
+            <h2>Multiselect box</h2>
+            <p>Check your favorite city:</p>
+            <select name="city" size="2" multiple>
+                <option value="Beograd">Beograd</option>
+                <option value="Novi sad">Novi Sad</option>
+                <option value="Kragujevac">Kragujevac</option>
+                <option value="Nis">Nis</option>
+            </select>
+        </form><br><br>
+        <form action="" method="POST">
+            <h2>Upload some file (song, pic...)</h2>
+            <p>Upload your song</p>
+            <input type="file" name="song">
+            <input type="submit" value="Upload">
+        </form><br><br>
+        <form action="">
+            <h2>Reset button:</h2>
+            <p>Name: </p>
+            <input type="text" name="name">
+            <p>Email: </p>
+            <input type="email" name="email">
+            <input type="submit" name="Submit">
+            <input type="reset" name="Reset">
+        </form><br><br>
+        <form action="">
+            <h2>Hidden input</h2>
+            <p>Enter your pass:</p>
+            <input type="password" name="password">
+            <input type="hidden" name="password" value="name">
+        </form><br><br>
+        <form action="">
+            <h2>Form for search</h2>
+            <p>Search:</p>
+            <input type="search" name="search" placeholder="Enter your text">
+            <input type="submit" value="Search">
+        </form><br><br>
+        
+        <form>
+            <label>
+                Polje za unos kriterijuma pretrage:
+            </label>
+            <input type="search">
+        </form>
+        <br><br>
+
+        <label>
+            Polje za unos numerickog podatka(min=1, max=25, step=0.3):
+        </label>
+        <input type="number" minlength="1" maxlength="25" step="0.3">
+        <br><br>
+        
+        <label for="email">Polje za unos e-mail adrese:</label>
+        <input type="email" id="email">
+        <br><br>
+
+        <label>Polje za unos URL adrese:</label>
+        <input type="url">
+        <br><br>
+
+        <label>Polje za unos datuma bez ogranicenja</label>
+        <input type="date">
+        <br><br>
+
+        <label>Polje za unos datuma sa ogranicenjem</label>
+        <input type="date" min="2017-03-01" max="2017-05-31">
+        <br><br>
+        <label>Polje za unos vremena:</label>
+        <input type="time" step="1">
+        <br><br>
+
+        <label>Polje za unos broja nedelja u godini sa ogranicenjem:</label>
+        <input type="week" min="15" max="40" step="3">
+        <br><br>
+
+        <label>Polje za unos meseca u godini sa ogranicenjem:</label>
+        <input type="month" min="3" max="11" step="1">
+        <br><br>
+
+        <form>
+            <fieldset>
+                <legend>Personals</legend>
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Last name: </label>
+                <input type="text" id="lname" name="lname"><br><br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="birthday">Birthday: </label>
+                <input type="date" id="birthday" name="birthday"><br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form><br><br>
+
+        <h2>Autofocus</h2>
+        <form>
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname" autofocus><br><br>
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname">
+            <input type="submit" value="Submit">
+        </form><br><br>
+
+        <label>Input za primer placeholder-a:</label>
+        <input type="text" placeholder="Enter name"><br><br>
+
+        <h2>Autocomplete on</h2>
+        <form autocomplete="on">
+            <label for="fname">First name: </label>
+            <input type="text" id="fname" name="fname" autocomplete="name">
+            <h2>Autocomplete off</h2>
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname" name="lname" placeholder="Last name" autocomplete="off">
+            <input type="submit" value="Submit">
+        </form><br><br>
+
+        <form>
+            <label for="username">Username: </label>
+            <input type="email" id="email" name="username" required>
+            <label for="password">Password: </label>
+            <input type="password" id="password" name="password" minlength="8">
+            <input type="submit" value="Submit">
+        </form>
+
+    </body>
+</html>

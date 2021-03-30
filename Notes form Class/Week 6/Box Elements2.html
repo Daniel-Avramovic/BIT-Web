@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Box elements</title>
+        <style>
+            
+            #demotext {
+                text-shadow: 7px 12px 8px #CE5937;
+                border: 0px solid #A41A54;
+                border-radius: 77px;
+            }
+            .box1{
+               /* box-sizing: content-box;
+               display: inline-block;*/
+               visibility: hidden;
+                width: 500px;
+                padding: 20px;
+                border: 10px solid #000;
+                margin: 0px 3px 10px 0px;
+            }
+            .box2{
+               /* box-sizing: border-box;*/
+                display: inline-block;
+                width: 300px;
+                padding: 20px;
+                border: 10px solid #000;
+            }
+            .box3{
+                display: inline-block;
+                width: 300px;
+                padding: 20px;
+                border: 5px solid red;
+            }
+            .flex{
+                display: flex;
+                flex-wrap: nowrap;
+                background-color: hotpink;
+            }
+            .flex > div{
+                background-color: indigo;
+                width: 100px;
+                margin: 10px;
+                font-size: 30px;
+            }
+
+            * ::before, *::after{box-sizing: border-box;}
+            .flexprimer{
+                width: 800px;
+                height: 100px;
+                background: brown;
+                border: 20px solid blue;
+            }
+            .drugaklasa{
+                box-sizing: content-box;
+                width: 500px;
+                border: 5px solid green;
+                background: blue;
+            }
+            .trecaklasa{
+                width: 800px;
+                padding: 25px;
+                border: 10px solid pink;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 
+        <div id="demotext">Naslov</div>
+        <div class="box1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="box2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="box2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="box3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="box3">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+        <div class="box2">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div> -->
+
+        <!-- <div class="flex">1</div> 
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>-->
+        <p class="flexprimer">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p class="drugaklasa">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p class="trecaklasa">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </body>
+</html>
