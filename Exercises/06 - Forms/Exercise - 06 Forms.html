@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!-- Text/Password Fields
+Create a page that contains a login form
+The form should contain username and password fields
+Add text to indicate which field is intended for what
+Login form should contain "forgot password" link
+When the user clicks on the link, they are redirected to a new "Reset password" page
+Reset page contains:
+an input text field that user uses to provide an email address
+"Send" link that redirects the user back to the login form  -->
+
+<html>
+    <head>
+        <title>Forme</title>
+    </head>
+    <body>
+        <form>
+            <p>
+                Username:
+                    <input type="text" name="username"/>
+            </p>
+            <p>
+                Password:
+                    <input type="password" name="password" />
+            </p>
+           </form>
+           <form action="form-2.html">
+                <button >
+                    Forgot password
+                </button>
+           </form><br><br><br>
+
+           <h2>Vezba 1</h2>
+           <p>Izaberite omiljeni predmet:</p>
+               <form>
+                    <input type="radio" name="predmet" value="Matemetika">Matemetika
+                    <input type="radio" name="predmet" value="Srpski Jezik">Srpski Jezik
+                    <input type="radio" name="predmet" value="Engleski Jezik">Engleski Jezik
+                    <input type="radio" name="predmet" value="Geografija">Geografija
+                </form>
+           <br>
+           <p>Izaberite omiljene oblasti iz matemtike:
+               <form>
+                   <input type="checkbox" name="Oblast" value="Razlomci">Razlomci<br>
+                   <input type="checkbox" name="Oblast" value="Trigonometirja">Trigonometirja<br>
+                   <input type="checkbox" name="Oblast" value="Planimetrija">Planimetrija<br>
+                   <input type="checkbox" name="Oblast" value="Vektori">Vektori
+               </form>
+           </p><br>
+           <p>Napisi utiiske o casovima matemtike:
+               <form>
+                   <textarea name="coment" cols="30" rows="4">Unesite ovde komentar</textarea>
+               </form>
+            </p><br><hr>
+
+            <h2>Vezba 2</h2>
+            <p>Izaberite omiljeni automobil: 
+                <select name="car">
+                    <option value="Audi">Audi</option>
+                    <option value="Bmw">Bmw</option>
+                    <option value="Golf">Golf</option>
+                </select>
+            
+                Izaberite tip automobil za Audi: 
+                <select name="typecar for audi">
+                    <option value="A6">A6</option>
+                    <option value="A4">A4</option>
+                    <option value="S4">S4</option>
+                </select>
+                
+                Izaberite tip automobil za Bmw: 
+                <select name="typecar for Bmw">
+                    <option value="320">320</option>
+                    <option value="325">325</option>
+                    <option value="330">330</option>
+                </select>
+                
+                Izaberite tip automobil za Golf: 
+                <select name="typecar for Golf">
+                    <option value="TDi">Audi</option>
+                    <option value="FSI">Bmw</option>
+                    <option value="GTI">Golf</option>
+                </select>
+            </p><br><br><br>
+            <p>Izaberite datum rodjenja:<br>
+                <input type="date" min="1930-01-01" max="2050-01-01">
+            </p><br><br><br><br>
+            <label>Izaberite gradove u koje putujete:</label> <br>
+                <form>
+                    <select name="grad" size="3" multiple="multiple">
+                        <option value="Beograd" selected="selected">Beograd</option>
+                        <option value="Smederevo">Smederevo</option>
+                        <option value="Kragujevac">Kragujevac</option>
+                        <option value="S.Palanka">S.Palanka</option>
+                        <option value="Novi Sad">Novi Sad</option>
+                        <option value="Subotica">Subotica</option>
+                        <option value="Kraljevo">Kraljevo</option>
+                    </select>
+                </form><br><hr>
+            <h2>Vezba 3</h2>
+                <form action="handle-upload.html">
+                    <p>Unesite sliku pre pocetka teninga:</p>
+                    <input type="file" name="before"><br>
+                    <textarea name="coment" cols="30" rows="4">Opis slike</textarea>
+                    
+                    <p>Ubacite sadasnju sliku:</p>
+                    <input type="file" name="now"><br>
+                    <textarea name="coment" cols="30" rows="4">Opis slike</textarea><br><br>
+                    
+                    <button>Send</button>
+                </form><br><br>
+
+                <form>
+                    <p>Unesite neki tekst:</p>
+                    <textarea name="coment" cols="30" rows="4">...</textarea><br>
+                    <p>Izaberite omiljene oblasti iz matemtike:</p>
+                        <input type="checkbox" name="Oblast" value="Razlomci">Razlomci<br>
+                        <input type="checkbox" name="Oblast" value="Trigonometirja">Trigonometirja<br>
+                        <input type="checkbox" name="Oblast" value="Planimetrija">Planimetrija<br>
+                        <input type="checkbox" name="Oblast" value="Vektori">Vektori<br>
+                        <input type="reset" name="Reset">
+                        <button>
+                            <img src="https://www.clker.com/cliparts/R/J/H/8/D/q/submit-button-md.png" alt="submit" width="75px" height="25px">
+                            This is submit button
+                        </button>
+                </form><br><hr>
+                
+                <form action = "handle-upload.html">
+                    <P>Zakazivanje fb objava</P>
+                    <label>Unesite ime: 
+                        <input type="text" name="name" placeholder="Ime" required>
+                    </label><br>
+                    <label>Izaberite datum: 
+                        <input type="date" required>
+                    </label><br>
+                    <label>Unesite URL lokaciju: 
+                        <input type="url" name="website" required>
+                    </label><br>
+                    <label>Unesite E-MAIL adresu za obavestenje: 
+                        <input type="email" name="e-mail" required>
+                    </label><br>
+                    <label>Izaberite sliku:
+                        <input type="file" name="slika">
+                    </label><br>
+                    <input type="submit" name="Submit">
+                   
+                </form><br><br><hr>
+
+                <h2>Catering reservations</h2>
+                <form action="" method="POST">
+                    <fieldset>
+                        <legend>Personal data</legend>
+                        <label for="name">Name: </label>
+                        <input type="text" id="name" name="name"><br><hr>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email"><br><hr>
+                        <label for="Pnumber">Phone number: </label>
+                        <input type="number" id="Pnumber" name="Phonenumber" min="0">
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Location</legend>
+                        <label for="city">City: </label>
+                        <input type="text" id="city" name="city"><br><hr>
+                        <label for="street">Street: </label>
+                        <input type="text" id="street" name="street"><br><hr>
+                        <label for="Snumber">Street number: </label>
+                        <input type="number" id="Snumber" name="Streetnumber" min="0">
+                    </fieldset><br>
+                    <fieldset>
+                        <legend>Event info</legend>
+                        <label>Select events: </label><br>
+                        <select name="events">
+                            <option value="birthday">Birthday</option>
+                            <option value="wedding" selected>Wedding</option>
+                            <option value="company ">Company</option>
+                        </select><br><hr>
+                        <label for="Eguests">Expected guests: </label><br>
+                        <input type="number" max="300" placeholder="50">
+                    </fieldset>
+                    <input type="submit" value="Send">
+                </form>
+        </body>
+</html>

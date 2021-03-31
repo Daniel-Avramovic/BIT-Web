@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<!-- Size
+Create a page containing two paragraphs.
+The first paragraph should have a yellow background
+The second paragraph should have a red background
+Add a lot of text to both of them
+
+Fixed size
+The first paragraph has width of 400px and height of 500px
+The second should have 600px width and 300px height
+Paragraph text should not overflow the box
+
+Dynamic size
+Max width of the first paragraph should be 300px
+Max height of the second one should be 200px
+The first paragraph text should be cut if it's bigger than the box
+The second paragraph text can overflow the paragraph (text can be bigger than the paragraph box)
+
+Borders
+Create three paragraphs on the page
+All of them should have a yellow background
+Each paragraph should have a 5px thick border
+The first and the last paragraphs should have red dashed borders
+The middle one should have green solid borders
+
+Padding
+Use the previous example or create three new paragraphs with bg color
+Set padding for each paragraph
+The first and the third should have a 50px padding around all sides
+The middle one should have a 50px top padding only
+
+Margins
+Use the previous example and add margins to each element
+The first should be 300px wide and should have 50px margins around all sides
+The second should be 400px wide and it should be horizontally centered on the screen
+The third one should be 200px wide and should have a 100px wide left margin
+
+Inline/Block Elements
+Transform the structure from the previous exercise
+Each paragraph should have the right margin set to 20px and no padding (0)
+Elements should all be in one row
+
+Hide/Show | Box Shadows | Rounded Corners
+
+Hide/Show 
+Hide the middle paragraph from the previous example
+The third paragraph should be hidden
+
+Box Shadow
+Add a main title on the page using h1 element
+Set width of the title to 960px
+Position the heading box to the center of the page
+The text in the heading should be centered 
+Add top and bottom padding of 50px and do that for the top/bottom margins also
+Define box background color, and font color
+Include some fancy font for the title
+Apply box shadow to the heading box
+
+Rounded Corners
+Round the corners on the heading box (try different radiuses)
+
+-->
+<html>
+    <head>
+        <title>Vezba</title>
+        <style>
+            h1{
+                width: 960px;
+                margin: 50px auto 50px auto;
+                padding: 50px 0px 50px 0px;
+                text-align: center;
+                background-color: blue;
+                color: red;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                -webkit-box-shadow: 16px 13px 12px 15px rgba(49,177,181,0.85); 
+                box-shadow: 16px 13px 12px 15px rgba(49,177,181,0.85);
+                border: 5px solid #1C6EA4;
+                border-radius: 30px 13px 26px 40px;
+
+                }
+            .first{
+                background-color: yellow;
+                width: 400px;
+                max-width: 300px;
+                height: 500px;
+                overflow: hidden;
+                margin-right: 20px;
+                padding: 0px;
+                display: inline-block;
+            }
+            .second{
+                background-color: red;
+                width: 600px;
+                height: 300px;
+                max-height: 200px;
+                overflow: scroll;
+                margin-right: 20px;
+                padding: 0px;
+                display: inline-block;
+                visibility: hidden;
+            }
+            .three{
+                background-color: yellow;
+                border: 5px red dashed;
+                /*padding: 50px;
+                margin: 50px;*/
+                width: 300px;
+                margin-right: 20px;
+                padding: 0px;
+                display: inline-block;
+                visibility: hidden;
+            }
+            .four{
+                background-color: yellow;
+                border: 5px;
+                border-width: thick;
+                border:5px green solid;
+                /*padding-top: 50px;
+                margin: 0 auto;*/
+                width: 400px;
+                margin-right: 20px;
+                padding: 0px;
+                display: inline-block;
+            }
+            .five{
+                background-color: yellow;
+                border: 5px red dashed;
+                /*padding: 50px;
+                margin-left: 100px;*/
+                width: 200px;
+                margin-right: 20px;
+                padding: 0px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Naslov</h1>
+        <p class="first">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget pretium ex, at tincidunt tortor. Ut dignissim nisi condimentum maximus eleifend. Vivamus ac quam viverra, commodo orci quis, condimentum velit. Quisque id elit sed odio tincidunt vehicula et a sem. Aliquam tincidunt tellus non suscipit rhoncus. Suspendisse condimentum neque justo, vel iaculis orci euismod id. Integer a aliquet velit, quis aliquam arcu. Donec vestibulum gravida nibh vitae molestie. Phasellus pretium condimentum aliquet. Curabitur condimentum sit amet ligula eu finibus. Nulla felis erat, scelerisque eu ex sed, fringilla tincidunt quam. Fusce tincidunt mi vulputate magna pharetra convallis. Suspendisse potenti. Sed et vestibulum enim. Nunc luctus quis turpis at sollicitudin. Aenean sit amet mauris eget dui rhoncus feugiat ut eu leo. Sed sed nunc eget leo consequat blandit eget a sapien. Cras at dignissim ex. Mauris luctus, eros at feugiat tincidunt, magna erat feugiat felis, id dictum mauris augue vitae magna. Pellentesque egestas, nibh vitae mollis suscipit, velit magna dignissim ipsum, sed volutpat neque elit quis erat. Aenean luctus nisl accumsan dui ultricies pellentesque. Fusce pellentesque arcu eget lectus ultricies placerat. Donec cursus faucibus eros nec sodales. Maecenas nunc enim, viverra non accumsan non, tempor eu ex. Integer interdum in lectus a semper. Quisque eget ipsum eget quam elementum semper. Praesent gravida odio eu lobortis maximus. Donec pretium massa sit amet magna gravida, eu porta ex vehicula. Nullam dignissim nisl tortor, in commodo tellus vestibulum ac. Praesent vitae vehicula augue, vitae condimentum tortor. Nam vulputate ipsum at aliquet fermentum.
+        </p>
+        <p class="second">
+            Vivamus dignissim libero purus, id faucibus quam imperdiet a. Suspendisse potenti. Nullam volutpat lacus eu diam eleifend mollis. Suspendisse potenti. Fusce sollicitudin ipsum odio. Aenean non mollis orci, ac imperdiet mauris. Nulla luctus aliquet risus, sit amet vestibulum diam tempor ac. Vivamus placerat justo vitae neque pharetra, vel volutpat urna pretium.Suspendisse lacus velit, ultrices a congue at, lacinia viverra sapien. Phasellus sagittis augue sed vestibulum rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec condimentum enim quis quam porttitor molestie. Suspendisse sit amet mi pellentesque, dapibus sem non, luctus erat. Praesent non ante vitae quam placerat venenatis suscipit at orci. Phasellus in nibh eu velit hendrerit iaculis. Ut nec erat pretium, accumsan nulla eget, commodo nulla. Vestibulum non ante quis nisi porta iaculis at vitae magna. Quisque nec urna fringilla, tempus risus in, posuere ligula. Sed accumsan maximus felis, et malesuada turpis vulputate at.Nam in augue odio. Vestibulum rhoncus scelerisque turpis, non tristique urna gravida eget. In eget feugiat arcu. Phasellus vestibulum orci non est elementum imperdiet. Proin accumsan vulputate neque et ornare. Nam cursus auctor elit a vehicula. Sed eget mauris vel felis pellentesque tempus.Integer vel justo blandit, facilisis neque sit amet, porta mauris. Nulla vitae lorem vel turpis auctor eleifend. Quisque vulputate volutpat nibh, vitae tempor erat consequat vel. Pellentesque sed eleifend nisi. Fusce nec eros malesuada, congue massa in, dictum purus. Nam venenatis elit vel felis tristique fermentum. Donec euismod pulvinar ultrices. Donec est urna, laoreet vel erat at, malesuada vestibulum lorem. Duis nec convallis elit, egestas finibus augue.
+        </p>
+        <p class="three">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget pretium ex, at tincidunt tortor. Ut dignissim nisi condimentum maximus eleifend. Vivamus ac quam viverra, commodo orci quis, condimentum velit. Quisque id elit sed odio tincidunt vehicula et a sem. Aliquam tincidunt tellus non suscipit rhoncus. Suspendisse condimentum neque justo, vel iaculis orci euismod id. Integer a aliquet velit, quis aliquam arcu. Donec vestibulum gravida nibh vitae molestie. Phasellus pretium condimentum aliquet. Curabitur condimentum sit amet ligula eu finibus. Nulla felis erat, scelerisque eu ex sed, fringilla tincidunt quam. Fusce tincidunt mi vulputate magna pharetra convallis. Suspendisse potenti. Sed et vestibulum enim. Nunc luctus quis turpis at sollicitudin. Aenean sit amet mauris eget dui rhoncus feugiat ut eu leo. Sed sed nunc eget leo consequat blandit eget a sapien. Cras at dignissim ex. Mauris luctus, eros at feugiat tincidunt, magna erat feugiat felis, id dictum mauris augue vitae magna. Pellentesque egestas, nibh vitae mollis suscipit, velit magna dignissim ipsum, sed volutpat neque elit quis erat. Aenean luctus nisl accumsan dui ultricies pellentesque. Fusce pellentesque arcu eget lectus ultricies placerat. Donec cursus faucibus eros nec sodales. Maecenas nunc enim, viverra non accumsan non, tempor eu ex. Integer interdum in lectus a semper. Quisque eget ipsum eget quam elementum semper. Praesent gravida odio eu lobortis maximus. Donec pretium massa sit amet magna gravida, eu porta ex vehicula. Nullam dignissim nisl tortor, in commodo tellus vestibulum ac. Praesent vitae vehicula augue, vitae condimentum tortor. Nam vulputate ipsum at aliquet fermentum.
+        </p>
+        <p class="four">
+            Vivamus dignissim libero purus, id faucibus quam imperdiet a. Suspendisse potenti. Nullam volutpat lacus eu diam eleifend mollis. Suspendisse potenti. Fusce sollicitudin ipsum odio. Aenean non mollis orci, ac imperdiet mauris. Nulla luctus aliquet risus, sit amet vestibulum diam tempor ac. Vivamus placerat justo vitae neque pharetra, vel volutpat urna pretium.Suspendisse lacus velit, ultrices a congue at, lacinia viverra sapien. Phasellus sagittis augue sed vestibulum rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec condimentum enim quis quam porttitor molestie. Suspendisse sit amet mi pellentesque, dapibus sem non, luctus erat. Praesent non ante vitae quam placerat venenatis suscipit at orci. Phasellus in nibh eu velit hendrerit iaculis. Ut nec erat pretium, accumsan nulla eget, commodo nulla. Vestibulum non ante quis nisi porta iaculis at vitae magna. Quisque nec urna fringilla, tempus risus in, posuere ligula. Sed accumsan maximus felis, et malesuada turpis vulputate at.Nam in augue odio. Vestibulum rhoncus scelerisque turpis, non tristique urna gravida eget. In eget feugiat arcu. Phasellus vestibulum orci non est elementum imperdiet. Proin accumsan vulputate neque et ornare. Nam cursus auctor elit a vehicula. Sed eget mauris vel felis pellentesque tempus.Integer vel justo blandit, facilisis neque sit amet, porta mauris. Nulla vitae lorem vel turpis auctor eleifend. Quisque vulputate volutpat nibh, vitae tempor erat consequat vel. Pellentesque sed eleifend nisi. Fusce nec eros malesuada, congue massa in, dictum purus. Nam venenatis elit vel felis tristique fermentum. Donec euismod pulvinar ultrices. Donec est urna, laoreet vel erat at, malesuada vestibulum lorem. Duis nec convallis elit, egestas finibus augue.
+        </p>
+        <p class="five">
+            Vivamus dignissim libero purus, id faucibus quam imperdiet a. Suspendisse potenti. Nullam volutpat lacus eu diam eleifend mollis. Suspendisse potenti. Fusce sollicitudin ipsum odio. Aenean non mollis orci, ac imperdiet mauris. Nulla luctus aliquet risus, sit amet vestibulum diam tempor ac. Vivamus placerat justo vitae neque pharetra, vel volutpat urna pretium.Suspendisse lacus velit, ultrices a congue at, lacinia viverra sapien. Phasellus sagittis augue sed vestibulum rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec condimentum enim quis quam porttitor molestie. Suspendisse sit amet mi pellentesque, dapibus sem non, luctus erat. Praesent non ante vitae quam placerat venenatis suscipit at orci. Phasellus in nibh eu velit hendrerit iaculis. Ut nec erat pretium, accumsan nulla eget, commodo nulla. Vestibulum non ante quis nisi porta iaculis at vitae magna. Quisque nec urna fringilla, tempus risus in, posuere ligula. Sed accumsan maximus felis, et malesuada turpis vulputate at.Nam in augue odio. Vestibulum rhoncus scelerisque turpis, non tristique urna gravida eget. In eget feugiat arcu. Phasellus vestibulum orci non est elementum imperdiet. Proin accumsan vulputate neque et ornare. Nam cursus auctor elit a vehicula. Sed eget mauris vel felis pellentesque tempus.Integer vel justo blandit, facilisis neque sit amet, porta mauris. Nulla vitae lorem vel turpis auctor eleifend. Quisque vulputate volutpat nibh, vitae tempor erat consequat vel. Pellentesque sed eleifend nisi. Fusce nec eros malesuada, congue massa in, dictum purus. Nam venenatis elit vel felis tristique fermentum. Donec euismod pulvinar ultrices. Donec est urna, laoreet vel erat at, malesuada vestibulum lorem. Duis nec convallis elit, egestas finibus augue.
+        </p>
+    </body>
+</html>

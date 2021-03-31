@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<!-- Browser-Safe Font Family
+Create a page with multiple paragraphs
+Apply different fonts to each of them
+Add a quote to each paragraph and define a different font for each quote
+
+
+Font size/weight/style
+Use HTML/CSS from the previous example
+Apply global font size/weight
+Override the global font for the first paragraph (apply some other font)
+Apply “oblique” style to the text in the second paragraph
+Create a span element somewhere inside the third paragraph
+Increase weight of the text inside the span and make it italic
+ 
+@font-face
+Take some time googling and find websites that provide fonts
+
+Downloading and including a font:
+Go to Google Fonts and download some font
+Include that font on page
+Apply the font to first paragraph
+
+Font via url from remote server:
+Go to Google Fonts and get the link for the font
+Include that font on the page using a link
+Apply the font to the page title-->
+    <head>
+        <title>Text</title>
+        <link rel="stylesheet" type="text/css" href="Exercise.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Chango&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Exercise Text Element</h1>
+        <p class="p1">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium blandit pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin suscipit nisl magna, eget laoreet dui sollicitudin sit amet. Donec eros augue, sodales ac ultricies sed, mattis eget justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus eros mi, convallis sed elit efficitur, feugiat luctus elit. In posuere elit purus, eu ornare turpis gravida at. Vivamus cursus sapien ut enim convallis, nec aliquet justo auctor. Donec in sapien sit amet metus sollicitudin tempor. Cras tempor nisi quis nibh laoreet ullamcorper. Phasellus elit mi, laoreet eget dolor in, ultricies porta est. Maecenas sed lobortis lectus, vel placerat massa. Phasellus hendrerit nisi at blandit placerat.
+        </p>
+        <p class="p2">
+            Fusce ut nunc felis. Suspendisse leo nulla, rhoncus non mollis ac, dignissim vitae dui. Maecenas consectetur lorem in orci laoreet, ut rhoncus urna pellentesque. Phasellus felis arcu, commodo ut libero id, interdum consectetur tortor. Cras at ultrices purus, sed porttitor tortor. Etiam eget neque dapibus, ullamcorper ex sed, mollis enim. Proin lacinia vel dolor nec volutpat. Duis faucibus mi magna, vitae consequat nisl vulputate vitae. Nunc vel velit tincidunt, tincidunt leo ac, pharetra erat. Quisque urna metus, condimentum eget malesuada ac, facilisis ut arcu. Sed pretium pharetra enim, vitae maximus urna pretium eu. Cras non nulla risus.  
+        </p>
+        <p class="p3">
+            Maecenas posuere rhoncus mi, a elementum ante maximus vitae. Quisque a tincidunt felis. Donec aliquam placerat lorem, nec facilisis odio facilisis nec. Cras aliquet varius malesuada. Integer mollis posuere tristique. Pellentesque vel magna vitae purus aliquam facilisis. Etiam nec tortor sed metus molestie blandit. Suspendisse eget venenatis tellus. 
+        </p>
+        <p class="p4">
+            Phasellus sollicitudin porttitor enim, et commodo sem euismod eu. Phasellus vitae ipsum mauris. In hac habitasse platea dictumst. Sed vel mi nec mi lacinia dignissim et et eros. Aliquam vestibulum elit sit amet gravida porttitor. Proin magna neque, semper in urna quis, feugiat mattis ligula. Aenean posuere maximus erat, non placerat arcu semper sed. Fusce malesuada mi auctor velit ornare placerat. Cras nec blandit nunc, sed pellentesque velit. Morbi molestie ex eget libero molestie, vitae feugiat erat pellentesque. Maecenas id luctus ligula, ut aliquam nunc.  
+        </p><hr>
+
+
+        <p class="p11">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pretium blandit pretium. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin suscipit nisl magna, eget laoreet dui sollicitudin sit amet. Donec eros augue, sodales ac ultricies sed, mattis eget justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus eros mi, convallis sed elit efficitur, feugiat luctus elit. In posuere elit purus, eu ornare turpis gravida at. Vivamus cursus sapien ut enim convallis, nec aliquet justo auctor. Donec in sapien sit amet metus sollicitudin tempor. Cras tempor nisi quis nibh laoreet ullamcorper. Phasellus elit mi, laoreet eget dolor in, ultricies porta est. Maecenas sed lobortis lectus, vel placerat massa. Phasellus hendrerit nisi at blandit placerat.
+        </p>
+        <p class="p21">
+            Fusce ut nunc felis. Suspendisse leo nulla, rhoncus non mollis ac, dignissim vitae dui. Maecenas consectetur lorem in orci laoreet, ut rhoncus urna pellentesque. Phasellus felis arcu, commodo ut libero id, interdum consectetur tortor. Cras at ultrices purus, sed porttitor tortor. Etiam eget neque dapibus, ullamcorper ex sed, mollis enim. Proin lacinia vel dolor nec volutpat. Duis faucibus mi magna, vitae consequat nisl vulputate vitae. Nunc vel velit tincidunt, tincidunt leo ac, pharetra erat. Quisque urna metus, condimentum eget malesuada ac, facilisis ut arcu. Sed pretium pharetra enim, vitae maximus urna pretium eu. Cras non nulla risus.  
+        </p>
+        <p>
+            Maecenas posuere rhoncus mi, a elementum ante maximus vitae. Quisque a tincidunt felis. Donec aliquam placerat lorem, nec facilisis odio facilisis nec. <span> Cras aliquet varius malesuada. </span> Integer mollis posuere tristique. Pellentesque vel magna vitae purus aliquam facilisis. Etiam nec tortor sed metus molestie blandit. Suspendisse eget venenatis tellus. 
+        </p>
+        <p>
+            Phasellus sollicitudin porttitor enim, et commodo sem euismod eu. Phasellus vitae ipsum mauris. In hac habitasse platea dictumst. Sed vel mi nec mi lacinia dignissim et et eros. Aliquam vestibulum elit sit amet gravida porttitor. Proin magna neque, semper in urna quis, feugiat mattis ligula. Aenean posuere maximus erat, non placerat arcu semper sed. Fusce malesuada mi auctor velit ornare placerat. Cras nec blandit nunc, sed pellentesque velit. Morbi molestie ex eget libero molestie, vitae feugiat erat pellentesque. Maecenas id luctus ligula, ut aliquam nunc.  
+        </p>
+
+
+
+    </body>
+
+</html>

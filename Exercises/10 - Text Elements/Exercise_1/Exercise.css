@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, Verdana, "Trebuchet MS", sans-serif;
+}
+@font-face {
+    font-family: 'SomeNew';
+    src: url('fonts/DancingScript-VariableFont_wght.ttf')
+}
+h1{
+    font-family: 'Chango', cursive;
+    text-align: center;
+}
+.p1{
+    font-family: SomeNew;
+    font-weight: bolder;
+}
+.p2{
+    font-family: 'Courier New';
+}
+.p3{
+    font-family: 'Lucida Sans';
+}
+.p4{
+    font-family: fantasy;
+}
+.p11{
+    font-family: 'Courier New', Courier, monospace;
+}.p21{
+    font-style: oblique;
+}
+span{
+    font-style: italic;
+    font-weight: bolder;
+}
