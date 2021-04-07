@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Naslov</title>
+        <style>
+            ul{
+                list-style: url('logo.jpg');
+            }
+            ol{
+                list-style: none;
+                list-style-type: lower-roman;
+            }
+            table{
+                display: inline-table;
+                border: 10px solid black;
+                width: 250px;
+                height: 150px;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                font-size: 20px;
+                text-align: center;
+                border-spacing: 20px 10px;
+                border-collapse: collapse;
+            }
+            td, th{
+                border-left: 2px solid red;
+                border-right: 2px solid red;
+                border-top: 4px solid blue;
+                border-bottom: 4px solid blue;
+            }
+            tr:hover{
+                background-color: blueviolet;
+            }
+            th{
+                background-color: chartreuse;
+                color: darkblue;
+            }
+            th:first-child{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>Prva</li>
+            <li>Druga</li>
+            <li>
+                <ol>
+                    <li>Prva stavka</li>
+                    <li>Druga stavka</li>
+                    <li>Treca stavka</li>
+                </ol>
+            </li>
+            <li>Zeleno</li>
+            <li>Plavo</li>
+        </ul>
+
+        <table>
+            <tr>
+                <th></th>
+                <th></th>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+h1{
+    margin: 0px;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 40px;
+    margin-bottom: 20px;
+}
+hr{
+    margin-bottom: 50px;
+}
+span{
+    color: #f2c51f;
+}
+div{
+    width: 40%;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+form{
+    background-color: #f0f2f2;
+    padding: 30px;
+    border: 5px solid transparent;
+    border-radius: 19px 0px 19px 0px;
+}
+label{
+    font-size: 20px;
+}
+input{
+    box-sizing: border-box;
+    border: 2px solid #969999;
+    border-radius: 6px;
+    -webkit-box-shadow: 2px 2px 12px 1px #969999; 
+    box-shadow: 2px 2px 12px 1px #969999;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 18px;
+}
+input[type = text]{
+    cursor: grabbing;
+}
+input[type = email] {
+    cursor: help;
+}
+input[type = number] {
+    cursor: not-allowed;
+}
+input[type = submit]{
+    width: 100%;
+    margin-top: 30px;
+    background-color: #cc3923;
+    color: white;
+    cursor: url('cursor.png'), auto;
+}
+/*input[type = submit]:hover {
+    cursor: url('cursor.png'), auto;
+}*/
