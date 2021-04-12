@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            li{
+                float: right;
+                padding: 10px;
+                list-style: none;
+            }
+            .prva1{
+                background-color: yellow;
+            }
+            a{
+                color: green;
+                text-decoration: none;
+            }
+            ul{
+                margin: 0px;
+            }
+            .klasa2::before,
+            .klasa2::after{
+                display: table;
+                clear: both;
+            }
+            article{
+                display: inline-block;
+                float: left;
+                height: 400px;
+                margin: 10px;
+                width: 28%;
+            }
+            .prva2{
+                background-color: pink;
+                height: 200px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="prva1 klasa2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Blog</li>
+            </ul>
+        </div>
+        <article>
+            <div class="prva2">
+                <p>Prvi paragraf</p>
+            </div>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+        </article>
+    </body>
+</html>
