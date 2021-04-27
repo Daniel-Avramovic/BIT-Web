@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0px 50px;
+    border: 1px solid;
+    justify-content: space-evenly;
+}
+.vr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.one{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+}
+.two{
+    width: 200px;
+    height: 200px;
+    background-color: rosybrown;
+}
+.three{
+    width: 200px;
+    height: 200px;
+    background-color: saddlebrown;
+}
+.four{
+    width: 200px;
+    height: 200px;
+    background-color: skyblue;
+}
+.five{
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+}
+.six{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+}
