@@ -1,0 +1,155 @@
+body{
+    font-family: sans-serif;
+    color:navy;
+}
+.content{
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    padding-right: 5px;
+    display:block;
+    text-align: right;
+    background-color: red;
+    color: white;
+    margin-bottom: 2px;
+}
+nav ul{
+    margin-bottom: 1px;
+}
+nav li{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+main{
+    display: flex;
+}
+.piccss{
+    position: relative;
+    flex-grow: 1;
+    display: inline-block;
+    height: 600px;
+    background-color:  #40b2db;
+}
+.piccss img {
+    position: absolute;
+    right: 15px;
+    top: 125px;
+    height: 350px;
+    padding: 0px;
+}
+.pichtml{
+    position: relative;
+    flex-grow: 1;
+    display: inline-block;
+    height: 600px;
+    background-color: #ff692e;
+}
+.pichtml img {
+    position: absolute;
+    left: 25px;
+    top: 125px;
+    height: 350px;
+}
+.articles{
+    position: relative;
+
+}
+article{
+    margin-top: 10px;
+    margin-left: 5px;
+    display: inline-block;
+    width: 300px;
+    
+}
+.centar{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+aside{
+    position: absolute;
+    color: black;
+    top: 10px;
+    background-color: #e8be00;
+    width: 300px;
+    height: 270px;
+}
+aside table tr td a{
+    color: black;
+}
+aside table{
+    padding: 5px;
+    padding-top: 20px;
+}
+aside table tr td{
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+.red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ad0e0e;
+    text-align: center;
+    color:white;
+    font-size: 25px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+.blue{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #28293b;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+.yellow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e8be00;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+.green{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1ca64f;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+footer{
+    background-color: #28293b;
+    color: white;
+    width: 1024px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    height: 40px;
+    padding-left: 60px;
+}
+
+
