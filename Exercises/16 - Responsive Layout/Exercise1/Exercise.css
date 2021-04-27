@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+.main{
+    width: 960px;
+    margin: 0 auto;
+    padding: 20px 40px 20px 40px;
+}
+img{
+    float: left;
+}
+.text{
+    float: left;
+}
+
+section{
+    clear: both;
+    display: block;
+    width: 100%;
+}
+.left{
+    float: left;
+    width: 40%;
+    padding: 15px;
+}
+.right{
+    float: right;
+    width: 60%;
+    border-left: 1px solid black;
+    padding: 15px;
+}
