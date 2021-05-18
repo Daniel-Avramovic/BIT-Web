@@ -1,0 +1,39 @@
+@import './variables';
+@import './mixin';
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border: $border;
+  h1 {
+    text-align: center;
+    @include textShadow();
+  }
+  @include boxShadow();
+}
+table {
+  width: 100%;
+  tr {
+    background-color: $tdBackCol;
+  }
+  .even {
+    background-color: $trColor;
+  }
+}
+td {
+  color: $tdColor;
+  border: $border;
+  width: $width;
+}
+.even {
+  background-color: $trColor;
+}
+#footer {
+  width: $width;
+  background-color: brown;
+}
+.title {
+  color: $naslov;
+  @include textShadow();
+
+}

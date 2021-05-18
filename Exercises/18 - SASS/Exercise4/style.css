@@ -1,0 +1,228 @@
+body {
+  font-family: sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container img {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  width: 60px;
+  margin-left: 50px;
+}
+
+nav ul {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: right;
+  margin-right: 30px;
+}
+
+nav li {
+  display: inline;
+  padding: 0 15px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+}
+
+header img {
+  width: 100%;
+  margin: 0px;
+}
+
+header h1 {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  color: white;
+  text-align: right;
+  margin: 0;
+}
+
+.onama {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.onama h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.onama .onama-line {
+  margin: 0 auto;
+  width: 150px;
+  height: 10px;
+  background-color: blue;
+}
+
+.onama ul {
+  list-style: url("list-style.png");
+}
+
+.onama button {
+  background-color: blue;
+  text-align: center;
+  height: 30px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.onama .button {
+  text-align: center;
+}
+
+.usluge {
+  background-color: #08b8fd;
+  border-radius: 200px 0px 0px 0px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.usluge h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.usluge .onama-usluge {
+  margin: 0 auto;
+  width: 150px;
+  height: 10px;
+  background-color: blue;
+}
+
+.usluge .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.usluge article {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  text-align: center;
+}
+
+.noveUsluge {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.noveUsluge h2 {
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.noveUsluge .onama-usluge {
+  margin: 0 auto;
+  width: 150px;
+  height: 10px;
+  background-color: blue;
+}
+
+.noveUsluge button {
+  background-color: blue;
+  text-align: center;
+  height: 30px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+.noveUsluge .button {
+  text-align: center;
+}
+
+.preporuke {
+  background-color: #08b8fd;
+  border-radius: 0px 200px 0px 0px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.preporuke .container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.preporuke h2 {
+  text-align: center;
+}
+
+.preporuke h4 {
+  color: white;
+}
+
+.preporuke .onama-usluge {
+  margin: 0 auto;
+  width: 150px;
+  height: 10px;
+  background-color: blue;
+  width: 200px;
+}
+
+.preporuke article {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  text-align: center;
+}
+
+.preporuke img {
+  margin: 0;
+  width: 400px;
+}
+
+footer {
+  text-align: center;
+  background-color: #00002e;
+  color: white;
+  padding: 7px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,180 @@
+body {
+  font-family: sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+@mixin line {
+  margin: 0 auto;
+  width: 150px;
+  height: 10px;
+  background-color: blue;
+}
+@mixin flex {
+  display: flex;
+  flex-flow: wrap row;
+  justify-content: center;
+  align-items: center;
+}
+@mixin button {
+  background-color: blue;
+  text-align: center;
+  height: 30px;
+  border: none;
+  color: white;
+  font-weight: bold;
+}
+$marginCenter: 0 auto;
+$textCentar: center;
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img {
+    flex-basis: 50%;
+    width: 60px;
+    margin-left: 50px;
+  }
+}
+nav {
+  ul {
+    flex-basis: 50%;
+    text-align: right;
+    margin-right: 30px;
+  }
+  li {
+    display: inline;
+    padding: 0 15px;
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+// end of nav
+header {
+  position: relative;
+  img {
+    width: 100%;
+    margin: 0px;
+  }
+  h1 {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+    text-align: right;
+    margin: 0;
+  }
+}
+// end of header
+.onama {
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  h2 {
+    text-align: $textCentar;
+    margin-bottom: 10px;
+  }
+  .onama-line {
+    @include line();
+  }
+  ul {
+    list-style: url("list-style.png");
+  }
+  button {
+    @include button();
+    text-align: center;
+  }
+  .button {
+    text-align: $textCentar;
+  }
+}
+// end of o nama
+.usluge {
+  background-color: rgb(8, 184, 253);
+  border-radius: 200px 0px 0px 0px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  h2 {
+    text-align: $textCentar;
+    margin-bottom: 10px;
+  }
+  .onama-usluge {
+    @include line();
+  }
+  .container {
+    @include flex();
+    width: 75%;
+    margin: $marginCenter;
+  }
+  article {
+    flex-basis: 50%;
+    text-align: $textCentar;
+  }
+}
+
+// end of usluge
+.noveUsluge {
+  flex-direction: column;
+  width: 90%;
+  margin: $marginCenter;
+  margin-top: 30px;
+  h2 {
+    text-align: $textCentar;
+    margin: $marginCenter;
+    margin-bottom: 10px;
+  }
+  .onama-usluge {
+    @include line();
+  }
+  button {
+    @include button();
+    text-align: center;
+  }
+  .button {
+    text-align: $textCentar;
+  }
+}
+// end od nove ulsuge
+
+.preporuke {
+  background-color: rgb(8, 184, 253);
+  border-radius: 0px 200px 0px 0px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+  justify-content: space-around;
+  .container{
+      width: 80%;
+      margin: $marginCenter;
+  }
+  h2{
+      text-align: $textCentar;
+  }
+  h4{
+      color: white;
+  }
+  .onama-usluge{
+      @include line();
+      width: 200px;
+  }
+  article{
+      flex-basis: 40%;
+      text-align: $textCentar;
+  }
+  img{
+      margin: 0;
+      width: 400px;
+  }
+}
+
+// end of preporuke
+
+footer{
+    text-align: $textCentar;
+    background-color: rgb(0, 0, 46);
+    color: white;
+    padding: 7px;
+}

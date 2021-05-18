@@ -1,0 +1,45 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  -webkit-box-shadow: 12px 12px 14px 12px #000000;
+          box-shadow: 12px 12px 14px 12px #000000;
+}
+
+.container h1 {
+  text-align: center;
+  text-shadow: 9px 14px 8px rgba(45, 17, 206, 0.93);
+}
+
+table {
+  width: 100%;
+}
+
+table tr {
+  background-color: orange;
+}
+
+table .even {
+  background-color: yellow;
+}
+
+td {
+  color: blue;
+  border: 1px solid black;
+  width: 50%;
+}
+
+.even {
+  background-color: yellow;
+}
+
+#footer {
+  width: 50%;
+  background-color: brown;
+}
+
+.title {
+  color: red;
+  text-shadow: 9px 14px 8px rgba(45, 17, 206, 0.93);
+}
+/*# sourceMappingURL=Exercise2.css.map */
