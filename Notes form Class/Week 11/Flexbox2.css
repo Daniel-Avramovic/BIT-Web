@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: cyan;
+}
+.parent{
+    display: flex;
+    width: 70%;
+    background-color: darkolivegreen;
+    margin: 40px auto 0 auto;
+}
+.first-child{
+    flex-basis: 25%;
+    border: 1px solid;
+    padding: 30px 20px;
+}
+.second-child{
+    width: 50%;
+    background-color: darkorange;
+    display: flex;
+    flex-direction: column;
+}
+.child1{
+    flex-basis: 50%;
+    background-color: pink;
+}
+.child2{
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    justify-content: center;
+}
